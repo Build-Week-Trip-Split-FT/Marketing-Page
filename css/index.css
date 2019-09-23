@@ -271,12 +271,14 @@ p {
   height: 12%;
   width: 40%;
   border-radius: 15px;
+  border-color: #659DBD;
   font-size: 1.8rem;
   margin-top: 3%;
   padding: 1.5%;
 }
 .container-home .intro .button:hover {
   background-color: white;
+  border-color: white;
   color: #659DBD;
 }
 @media (max-width: 800px) {
@@ -284,6 +286,11 @@ p {
     width: 25%;
     font-size: 1.4rem;
   }
+}
+.fas {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
 }
 .main-content {
   display: flex;
@@ -299,7 +306,7 @@ p {
 .main-content .text-content {
   height: 50%;
   margin: 0 auto;
-  padding: 20px;
+  padding: 5%;
   align-items: center;
   justify-content: space-evenly;
 }
