@@ -1,0 +1,132 @@
+.container-home {
+    background-image: url("../img/head-img.jpg");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 90vh;
+
+    @media @mobile {
+        height: 50vh;
+    }
+
+    .intro {
+        width: 40%;
+        margin-left: 17%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        @media @mobile {
+            margin: 0 auto;
+            width: 75%;
+        }
+
+        .first-text{
+            .headText();
+            font-size: 3.3rem;
+            @media @mobile {
+                font-size: 2rem;
+            }
+        }
+
+            .second-text{
+                .headText();
+                margin-top: 2%;
+                font-size: 2.7rem;
+                @media @mobile {
+                    font-size: 1.8rem;
+                }//this closes media query
+            }//this closes second text
+
+            .button {
+                .button();
+                margin-top: 3%;
+                padding: 1.5%;
+                @media @mobile {
+                    width: 25%;
+                    font-size: 1.4rem;
+                }
+            }
+    }//this closes intro
+}//this closes container-home
+
+.main-content {
+    display: flex;
+    // padding: 10px;
+    // margin: 20px;
+    height: 600px;
+
+    @media @mobile {
+        height: auto;
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .text-content {
+        height: 50%;
+        margin: 0 auto;
+        padding: 20px;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    
+    h2 {
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+        color: #659DBD;
+        font-size: 3.3rem;
+    }
+
+    p {
+        color: #659DBD;
+        width: 70%;
+        margin: 0 auto;
+        font-size: 1.9rem;
+        text-align: center;
+    }
+}
+
+.top-middle-section .text-content:first-child {
+    background-color: #659DBD;
+
+    h2 {
+        color: white;
+    }//this closes h2
+
+    p {
+        color: white;
+    }//this closes p
+}//this closes top middle section
+
+.bottom-middle-section {
+    @media @mobile {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
+
+.bottom-middle-section .text-content:last-child {
+    background-color: #659DBD;
+
+    h2 {
+        color: white;
+    }//this closes h2
+
+    p {
+        color: white;
+    }
+}
+
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: #659DBD;
+
+    p {
+        color: white;
+    }
+}
