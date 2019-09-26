@@ -295,6 +295,10 @@ p {
     font-size: 1.4rem;
   }
 }
+.container-home .intro .button .btn-link {
+  text-decoration: none;
+  color: inherit;
+}
 .fas {
   margin: 0 auto;
   display: flex;
